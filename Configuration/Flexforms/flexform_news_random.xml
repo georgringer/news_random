@@ -1,0 +1,18 @@
+<extra_random-news>
+    <ROOT>
+        <TCEforms>
+            <sheetTitle>Random News</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+            <settings.randomNews>
+                <TCEforms>
+                    <label>Random News</label>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </settings.randomNews>
+        </el>
+    </ROOT>
+</extra_random-news>
