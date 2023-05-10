@@ -22,7 +22,7 @@ class FlexFormHook
             $file = ExtensionManagementUtility::extPath('news_random') . 'Configuration/Flexforms/flexform_news_random.xml';
             $content = file_get_contents($file);
             if ($content) {
-                $dataStructure['sheets']['extraEntryEventNews'] = GeneralUtility::xml2array($content);
+                $dataStructure['sheets']['extraEntryNewsRandom'] = GeneralUtility::xml2array($content);
             }
         }
         return $dataStructure;
