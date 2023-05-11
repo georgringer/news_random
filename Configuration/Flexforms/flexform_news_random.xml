@@ -1,4 +1,4 @@
-<extra_random-news>
+<extra>
     <ROOT>
         <TCEforms>
             <sheetTitle>Random News</sheetTitle>
@@ -15,4 +15,4 @@
             </settings.randomNews>
         </el>
     </ROOT>
-</extra_random-news>
+</extra>

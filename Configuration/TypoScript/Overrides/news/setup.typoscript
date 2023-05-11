@@ -1,0 +1,16 @@
+# /**
+#  * This file is part of the "news_random" Extension for TYPO3 CMS.
+#  *
+#  * For the full copyright and license information, please read the
+#  * LICENSE.txt file that was distributed with this source code.
+#  */
+
+
+
+plugin.tx_news {
+
+    settings {
+		randomNews = 0
+        
+    }
+}
