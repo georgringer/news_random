@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['news_random'] = [
     'title' => 'Random news',
     'description' => 'Display random news',
     'category' => 'fe',
@@ -8,11 +8,12 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'mail@ringer.it',
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '1.2.0',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.1-11.5.99',
-            'news' => '11.0.0-11.9.99',
+            'php' => '8.2.0-8.4.99',
+            'typo3' => '13.4.0-13.4.99',
+            'news' => '12.2.0-14.99.99',
         ],
         'conflicts' => [],
         'suggests' => [],

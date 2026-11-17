@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  GeorgRinger\NewsRandom\:
+    resource: '../Classes/*'
+
+  GeorgRinger\NewsRandom\EventListener\AfterFlexFormDataStructureParsedEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'news-random/flexformparsing'
+        event: TYPO3\CMS\Core\Configuration\Event\AfterFlexFormDataStructureParsedEvent
+
+  GeorgRinger\NewsRandom\EventListener\NewsDemandListener:
+    tags:
+      - name: event.listener
+        identifier: 'news-random/demand'
+        event: GeorgRinger\News\Event\CreateDemandObjectFromSettingsEvent
+
+  GeorgRinger\NewsRandom\EventListener\RandomizeNewsListener:
+    tags:
+      - name: event.listener
+        identifier: 'news-random/repository'
+        event: GeorgRinger\News\Event\ModifyDemandRepositoryEvent

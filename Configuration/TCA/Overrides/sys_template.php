@@ -1,6 +1,17 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 
+call_user_func(function()
+{
+   $extensionKey = 'news_random';
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('news_random', 'Configuration/TypoScript', 'News');
+   /**
+    * Default TypoScript
+    */
+   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+      $extensionKey,
+      'Configuration/TypoScript',
+      'News'
+   );
+});
