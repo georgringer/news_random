@@ -1,1 +1,18 @@
-
+<T3DataStructure>
+    <ROOT>
+        <sheetTitle>Random News</sheetTitle>
+        <sheetDescription>
+            Enable the checkbox and set a limit for maximum records displayed, otherwise the random feature won't work.
+        </sheetDescription>
+        <type>array</type>
+        <el>
+            <settings.randomNews>
+                <label>Random News</label>
+                <config>
+                    <type>check</type>
+                    <renderType>checkboxToggle</renderType>
+                </config>
+            </settings.randomNews>
+        </el>
+    </ROOT>
+</T3DataStructure>
