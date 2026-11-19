@@ -31,7 +31,7 @@ final class AfterFlexFormDataStructureParsedEventListener
             return;
         }
 
-        $file = ExtensionManagementUtility::extPath('news_random') . 'Configuration/Flexforms/flexform_news_random.xml';
+        $file = ExtensionManagementUtility::extPath('news_random') . 'Configuration/FlexForms/flexform_news_random.xml';
         $content = file_get_contents($file);
         if ($content === false || $content === '') {
             return;
