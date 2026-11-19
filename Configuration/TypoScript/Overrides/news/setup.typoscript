@@ -5,12 +5,8 @@
 #  * LICENSE.txt file that was distributed with this source code.
 #  */
 
-
-
 plugin.tx_news {
-
     settings {
-		randomNews = 0
-        
+        randomNews = 0
     }
 }
